@@ -1,3 +1,4 @@
+import time
 para=1200
 t=123
 
@@ -6,6 +7,8 @@ for i in range (0,3):
     sifre=int(input("şifre gir"))
     if t==sifre:
         print("tebrikler giriş yaptınız")
+        print("aktarılıyorsunuz...")
+        time.sleep(1)
         break
     else:
         print("şifre yanlış")
@@ -13,7 +16,7 @@ for i in range (0,3):
 else:
     print("kartınız bloke oldu")
 
-print("para çekmek için 1 \n para yatırmak için 2 \n parayı görmek için 3 \n çıkmak için 4")
+print("->para çekmek için 1 \n->para yatırmak için 2 \n->parayı görmek için 3 \n->çıkmak için 4")
 
 for i in range(0,999):
         girilen=int(input("seçiminiz"))
@@ -31,4 +34,6 @@ for i in range(0,999):
         elif girilen==3:
             print(para)
         elif girilen==4:
+            print("çıkıyorsunuz...")
+            time.sleep(3)
             break
