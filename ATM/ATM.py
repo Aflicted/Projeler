@@ -1,5 +1,5 @@
 import time
-para=1200
+para=0
 t=123
 
 
